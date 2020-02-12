@@ -1,8 +1,13 @@
 .image {
-  border-radius: 20%;
-  transition: all 0.1s ease 0s;
+	overflow: hidden;	/*拡大時にはみ出た部分を隠す*/
+	width: 320px;	/*画像の幅*/
+	height: 180px;	/*画像の高さ*/
 }
-.image:hover {
-  cursor: pointer;
-  transform: scale(1.1, 1.1);
+.image img {
+	display: block;
+	transition-duration: 0.3s;	/*変化に掛かる時間*/
+}
+.image img:hover {
+	transform: scale(1.1);	/*画像の拡大率*/
+	transition-duration: 0.3s;	/*変化に掛かる時間*/
 }
